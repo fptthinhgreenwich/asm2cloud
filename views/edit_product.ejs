@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body class="edit-product-body">
+    <div class="form-container">
+      <h1 class="form-title">Edit Product</h1>
+      <form action="/users/edit/<%= product.id %>" method="POST" class="edit-product-form">
+        <div class="form-group">
+          <label for="product_name">Product Name:</label>
+          <input type="text" id="product_name" name="product_name" value="<%= product.product_name %>" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" name="amount" value="<%= product.amount %>" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" value="<%= product.price %>" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="shop_id">Shop ID:</label>
+          <input type="number" id="shop_id" name="shop_id" value="<%= product.shop_id %>" class="form-input" required>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Update Product</button>
+      </form>
+      <a href="/users" class="btn btn-back">Back to Admin Page</a>
+    </div>
+  </body>
+</html>

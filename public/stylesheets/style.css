@@ -1,0 +1,297 @@
+/* Cài đặt chung */
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Bảng sản phẩm */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  border: 2px solid #dedede;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-header {
+  background-color: #37474F;
+  color: #ffffff;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #cccccc;
+}
+
+.product-row:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.product-row:hover {
+  background-color: #cfd8dc;
+  cursor: pointer;
+}
+
+.product-cell {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+}
+
+.product-cell a.edit-link {
+  color: #009688;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border: 1px solid #009688;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.product-cell a.edit-link:hover {
+  background-color: #009688;
+  color: #ffffff;
+}
+
+/* Nút delete */
+.delete-button {
+  background-color: #FF5252;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}
+
+/* Form delete */
+.delete-form {
+  margin: 0;
+}
+
+/* Các class khác cho bố cục */
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #37474F;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.user-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Container cho bảng */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+/* Group cho các nút chức năng */
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Nút Create và Logout */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #009688;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-create {
+  background-color: #0288D1;
+}
+
+.btn-logout {
+  background-color: #FF5252;
+}
+
+.btn:hover {
+  background-color: #00796B;
+}
+
+.btn-create:hover {
+  background-color: #0277BD;
+}
+
+.btn-logout:hover {
+  background-color: #E53935;
+}
+/* Trang đăng nhập */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+
+/* Container chính cho form đăng nhập */
+.login-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Tiêu đề trang và thông báo */
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #37474F;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.welcome-message {
+  font-size: 14px;
+  color: #607D8B;
+  margin-bottom: 20px;
+}
+
+.login-instructions {
+  font-size: 16px;
+  color: #455A64;
+  margin-bottom: 20px;
+}
+
+/* Form đăng nhập */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-label {
+  text-align: left;
+  font-size: 14px;
+  color: #37474F;
+}
+
+.login-input {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #0288D1;
+  box-shadow: 0px 0px 5px rgba(2, 136, 209, 0.5);
+}
+
+/* Nút đăng nhập */
+.login-button {
+  background-color: #0288D1;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0277BD;
+}
+/* Bảng sản phẩm */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse; /* Đảm bảo các viền của bảng không bị tách biệt */
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  border: 2px solid #ddd;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd; /* Tạo viền cho các ô của bảng */
+  text-align: center;
+}
+
+.admin-table th.table-header {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #e0f7fa;
+}
+
+/* Dropdown styles */
+.dropdown-form {
+  margin-bottom: 20px;
+}
+
+.dropdown-label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.dropdown-select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-select {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-select:hover {
+  background-color: #45a049;
+}

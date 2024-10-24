@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body class="user-page">
+    <h1 class="page-title"><%= title %></h1>
+    <p>Welcome to the <%= title %></p>
+    
+    <!-- Bảng sản phẩm -->
+    <div class="table-container">
+      <%- products_table %>
+    </div>
+
+    <!-- Các nút chức năng -->
+    <div class="button-group">
+      <a href="/users/create/" class="btn btn-create">Create</a>
+      <a href="/logout" class="btn btn-logout">Logout</a>
+    </div>
+    
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>

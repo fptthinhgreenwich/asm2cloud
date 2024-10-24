@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body class="create-product-body">
+    <div class="form-container">
+        <h1 class="form-title">Create Product</h1>
+        <form action="/users/create" method="post" class="create-product-form">
+            <div class="form-group">
+                <label for="product_name">Product Name:</label>
+                <input type="text" name="product_name" id="product_name" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" name="price" id="price" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" name="amount" id="amount" required class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="shop_id">Shop ID:</label>
+                <select name="shop_id" id="shop_id" required class="form-select">
+                    <option value="">Select Shop</option>
+                    <option value="2">Shop A</option>
+                    <option value="3">Shop B</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Create Product</button>
+        </form>
+        <a href="/users" class="btn btn-back">Back to Admin Page</a>
+    </div>
+</body>
+</html>
